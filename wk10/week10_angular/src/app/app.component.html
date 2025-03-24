@@ -1,0 +1,35 @@
+<h1>Hello, {{ title }}</h1>
+{{ college }}
+
+<button (click)="buttonClick()">Click 1</button>
+<button on-click="buttonClick()">Click 2</button>
+<br />
+<!-- <img src="https://randomuser.me/api/portraits/women/{{person_image}}"/><br/> -->
+
+<img src={{person_image}} /><br />
+<img bind-src="person_image" /><br />
+
+<img src="https://randomuser.me/api/portraits/women/39.jpg" />
+<app-student [student]="stud"></app-student>
+
+<h1>Date Pipe Examples</h1>
+<p>{{ today }}</p>
+<p>{{ "Hello" | lowercase }}</p>
+<p>{{ today | date }}</p>
+<p>{{ today | date:'long' }}</p>
+<p>{{ today | date:'medium' }}</p>
+<p>{{ today | date:'short' }}</p>
+<p>{{ today | date:'dd-MM-yyyy' }}</p>
+<h1>Currency Pipe Examples</h1>
+<p>{{ 1223456 | currency }}</p>
+<p>{{ 1223456 | currency:'JYP' }}</p>
+<p>{{ 1223456 | currency:'EUR' }}</p>
+<p>{{ 1223456 | currency:'INR' }}</p>
+<p>{{ 1223456 | currency:'GBP' }}</p>
+
+<h1>Number Pipe Examples</h1>
+<p>{{ 1223456 | number }}</p>
+<p>{{ 1223456.789 | number:'2.0' }}</p>
+
+<!-- <router-outlet></router-outlet> -->
+
